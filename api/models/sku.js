@@ -1,9 +1,18 @@
 'use strict'
 module.exports = (sequelize, DataTypes) => {
     const Sku = sequelize.define('Sku', {
-      sku: DataTypes.INTEGER,
+      sku: {
+        primaryKey:true,
+        type:DataTypes.INTEGER,
+      },
       inventory: DataTypes.INTEGER,
       price: DataTypes.DECIMAL,
+      productId:{
+          type: DataTypes.INTEGER,
+          references: {
+            model: 'Product', key: 'id'
+          }
+      } 
     },{
       timestamps: false
     });

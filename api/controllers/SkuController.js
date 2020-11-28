@@ -1,4 +1,5 @@
-/*const database = require('../models')
+
+const database = require('../models')
 
 class SkuController{
     static async showAllSkus(req, res){
@@ -12,18 +13,16 @@ class SkuController{
 
     static async showOneSku(req, res){
         const { sku } = req.params
-        try{
-            const oneSku = await database.Sku.findOne({
-                where:{
-                    sku: Number(sku)
-                }
-            })
+        console.log(sku, 'sihauhiushaiush')
+        try {
+            const oneSku = await database.Sku.findByPk(sku)
             return res.status(200).json(oneSku)
-        }catch(error){
+
+        } catch (error){
             return res.status(500).json(error.message)
         }
-        
     }
 }
 
-module.exports = SkuController*/
+module.exports = SkuController
+

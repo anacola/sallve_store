@@ -8,15 +8,20 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       price:{
-      allowNull: false,
-      type: Sequelize.DECIMAL,
+        allowNull: false,
+        type: Sequelize.DECIMAL,
       },
       sku:{
+        primaryKey:true,
         allowNull: false,
-        autoIncrement: false,
-        type: Sequelize.INTEGER,
-        references: { model: 'Product', key: 'id'}
+        autoIncrement: true,
+        type: Sequelize.INTEGER,  
       },
+      productId:{
+        //allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: {tableName: 'products'}, key: 'id'},
+      }
 
   })
     /**

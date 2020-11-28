@@ -1,0 +1,10 @@
+GET http://localhost:3001/product/get
+
+
+###
+
+GET http://localhost:3001/sku/
+
+
+###
+GET http://localhost:3001/sku/1

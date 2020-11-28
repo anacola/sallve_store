@@ -12,9 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       timestamps: false
     });
   Product.associate = function(models){
-    Product.hasOne(models.Sku, {
-      foreingKey: 'id'
-    })
+    Product.hasMany(models.Sku)
   };
     return Product;
-};  
+};    

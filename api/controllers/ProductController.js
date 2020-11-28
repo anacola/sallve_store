@@ -4,7 +4,7 @@ class ProductController{
     static async showAllProducts(req, res){
         try {
             const allProducts = await database.Product.findAll()
-        return res.status(200).json(allProducts)
+            return res.status(200).json(allProducts)
         } catch (error){
             return res.status(500).json(error.message)
         }
@@ -25,7 +25,7 @@ class ProductController{
         }
     }
 
-    static async creatProduct(req, res){
+    static async createProduct(req, res){
         const newProduct = req.body
         try {
             const creatNewProduct = await database.Product.create(newProduct)
@@ -58,21 +58,6 @@ class ProductController{
         }
     }
 
-    static async showOneSku(req, res){
-        const { id, sku } = req.params
-        try {
-            const oneSku = await database.Sku.findOne( {
-                where: { 
-                    id: Number(id),
-                    sku: Number(sku) 
-                }
-            })
-            return res.status(200).json(oneSku)
-
-        } catch (error){
-            return res.status(500).json(error.message)
-        }
-    }
 }
 
 
