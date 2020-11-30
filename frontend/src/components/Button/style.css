@@ -1,0 +1,128 @@
+.btn-buy {
+    height: 40px;
+    width: 217px;
+    padding: 10px;
+    margin:1%;
+    border-radius: 5px;
+    background: #333333;
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.btn-buy:hover {
+    background: #9f77ff;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 635px) {
+    .btn-buy{
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+        padding: 1px;
+    }   
+}
+
+.btn-small{
+    height: 25px;
+    width: 25px;
+    align-content:flex;
+    margin-right: 10px; 
+    background: #9f77ff;
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+
+}
+.btn-small:hover {
+    background: #ccec3a;
+    color: #333333;
+}
+
+
+.btn-small-del{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #333333;
+    color:#ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+
+}
+.btn-small-del:hover {
+    background: #fa3659;
+    color: #eab46c;
+}
+/*
+.btn-send {
+    height: 2.5em;
+    width: 6em;
+    padding: 10px;
+    margin:1%;
+    border-radius: 0.5em;
+    background: #f14110;
+    color:#eab46c;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-send:hover {
+    background: #fa3659;
+    color: #eab46c;
+}
+
+.btn-send {
+    height: 2.5em;
+    width: 6em;
+    padding: 10px;
+    margin:1%;
+    border-radius: 0.5em;
+    background: #f14110;
+    color:#eab46c;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-cozinha{
+    height: 2em;
+    width: 10em;
+    margin:1%;
+    border-radius: 0.5em;
+    background: #f14110;
+    color:#eab46c;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+}
+
+@media only screen and (max-width: 635px) {
+    .btn-options {
+       margin:2%;
+    }
+    .btn-options {
+        height: 3em;
+        width: 6em;
+    }
+    .btn-small{
+        height: 1em;
+        width: 1em;
+        border-radius: 0.2em;
+        font-size: 20px;
+        padding: 0%;
+    }
+}*/

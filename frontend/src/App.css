@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.app{
+  display: flex;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list {
+  display:flex;
+  width: 100%;
+  justify-content: flex-start;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 20px;
+  border-right: 1px solid grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product{
+  height: 14em;
+  width: 14em;
+  margin:2%;
+  border-radius: 5%;
+  margin-bottom: 200px;
+  align-content: left;
+
+}
+
+.cardImage{
+  height:14em;
+  width: 14em;
+}
+
+.cart{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-content: left;
+  height: 100%;
+  width: 40%;
+  padding: 40px;
+}
+
+.textCard{
+  align-content: left;
+}
+
+.cartProduct{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.nameAndDelete{
+  width: 200px;
+  display: flex;
+  margin-bottom: 1px;
+}
+
+.cartImage{
+  height: 100px;
+  width: 100px;
+}
+
+.textCart{
+  margin-top: 1%;
+  margin-right: 10px;
+  margin-bottom: 1%;
+}
+
+.cartSection{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.cartPrice{
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 20px;
+  
+}
+
+@media only screen and (max-width: 635px) {
+
+  .product{
+    height: 10em;
+      width: 10em;
+      margin:none;
+      border-radius: 5%;
+      margin-bottom: 190px;
+      align-content: left;
+  
   }
-  to {
-    transform: rotate(360deg);
+
+  .cardImage{
+    height:10em;
+    width: 10em;
+  }
+
+  .text{
+    font-size: 12pt;
+    margin-top: none;
+  }
+
+  .productName{
+    font-size: 13pt;
+  }
+
+  .cartImage{
+    height: 70px;
+    width: 70px;
+  }
+
+  .cartSection{
+    margin-left: 5px;
+  }
+  
+
+  .nameAndDelete{
+    margin-top: 10px;
+  }
+
+  .cartProduct{
+    width: 200px;
   }
 }

@@ -1,0 +1,16 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 3%;
+    justify-content: center;
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height:5em;
+    margin: 5%;
+   
+}

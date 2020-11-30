@@ -21,8 +21,19 @@ module.exports = {
       {
         inventory: 5,
         price: 59.90,
-        productId: 1,
+        productId: 4,
+      },
+      {
+        inventory: 10,
+        price: 69.90,
+        productId: 5,
+      },
+      {
+        inventory: 25,
+        price: 89.90,
+        productId: 6,
       }
+
   ], {});
     
   },

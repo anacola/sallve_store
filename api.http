@@ -3,8 +3,12 @@ GET http://localhost:3001/product/get
 
 ###
 
-GET http://localhost:3001/sku/
+GET http://localhost:3001/sku/get
 
 
 ###
 GET http://localhost:3001/sku/1
+
+
+###
+GET http://localhost:3001/product/teste

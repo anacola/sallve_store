@@ -13,7 +13,6 @@ class SkuController{
 
     static async showOneSku(req, res){
         const { sku } = req.params
-        console.log(sku, 'sihauhiushaiush')
         try {
             const oneSku = await database.Sku.findByPk(sku)
             return res.status(200).json(oneSku)
@@ -22,6 +21,8 @@ class SkuController{
             return res.status(500).json(error.message)
         }
     }
+
+   
 }
 
 module.exports = SkuController
