@@ -30,7 +30,6 @@ function App() {
       val.contador = 1;
       val.value = sku.price
       val.total = val.contador * val.value
-      console.log(val.total)
       
       setProductSelect([...productSelect, val])
     } else {
@@ -50,7 +49,7 @@ function App() {
         product.contador += 1;
         setProductSelect([...productSelect])
     }
-};
+  };
 
 const decreaseUnit = (product) => {
   if (product.contador === 1) {
@@ -66,7 +65,6 @@ const decreaseUnit = (product) => {
 
 const totalOrder = productSelect.reduce((acc, val) => {
   return acc + val.contador * val.value }, 0);
-console.log(totalOrder)
 
 
 const deletProduct = (item) => {
