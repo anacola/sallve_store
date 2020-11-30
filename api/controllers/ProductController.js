@@ -13,8 +13,6 @@ class ProductController{
         }
     }
 
-
-
     static async showOneProduct(req, res){
         const { id } = req.params
         try {
@@ -63,25 +61,6 @@ class ProductController{
         }
     }
     
-    static async getOneProduct(req, res){
-        try {
-            const pega = await database.Product.findAll({
-                raw: true,
-                attributes: attributes,
-                include:[{
-                    model: database.sku,
-                    required: true,
-                    attributes: ['ProductId'],
-                }],
-            })
-            console.log(pega)
-            return res.status(200).json(pega)
-        } catch (error){
-            return res.status(500).json(error.message)
-        }
-    }
-
-
 }
 
 
