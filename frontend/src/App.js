@@ -20,7 +20,7 @@ function App() {
         setProductList(products.data);
         setProductSku(skus.data);
       }))
-  }, [])
+  }, [])  
 
   const addProductToCart = (e, val, sku) => {
     e.preventDefault();
@@ -154,7 +154,6 @@ const deletProduct = (item) => {
                                   decreaseUnit(product)
                               }}
                             />
-                            <p className={'textCart'}>R${product.total},00</p>
                           </div> 
                         </section>  
                       </div>
