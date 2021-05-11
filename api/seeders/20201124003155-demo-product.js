@@ -5,27 +5,27 @@ module.exports = {
     return queryInterface.bulkInsert('products', [
       {
         name: 'hidratante labial',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-hidratante-labial-1.jpg?v=1605541986',     
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-hidratante-labial-5.jpg?v=1617913357',     
       }, 
       {
         name: 'limpador facial',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-limpador-facial-1.jpg?v=1597658319',     
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-lf-mar-3.jpg?v=1617913320',     
       },       
       {
         name: 'hidratante firmador',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-hidratante-firmador.jpg?v=1597658578',     
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-firmador-4.jpg?v=1617999135',     
       },  
       {
         name: 'esfoliante enzimático',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-esfoliante-enzimatico-1-a.jpg?v=1597658287',     
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-esfoliante-enzimatico-5.jpg?v=1617913447',     
       }
       {
         name:'bálsamo demaquilante',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/balsamo-demaquilante-1.jpg?v=1601986306',
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/products/balsamo-demaquilante-2_08a4c49f-d8fa-4567-926a-8a3b02e353f9.jpg?v=1615295866',
       }
       {
         name: 'antioxidante hidratante',
-        image: 'http://cdn.shopify.com/s/files/1/0074/3486/2639/products/sallve-antioxidante-hidratante-1.jpg?v=1605127205'
+        image: 'https://cdn.shopify.com/s/files/1/0074/3486/2639/files/AH_large.jpg?v=1588577935'
       }
     ], {});
   
